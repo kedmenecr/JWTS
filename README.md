@@ -8,6 +8,9 @@
   - In the setup.sh copy and paste this
 
   ```
+   #!/bin/bash
+   # My first script
+
     mkdir BlogInfra
     cd BlogInfra
     git clone git@github.com:kedmenecr/BLUI.git
@@ -56,6 +59,8 @@
  - As before you have to create a new file and copy this content to it
 
     ```
+   #!/bin/bash
+   # My first script
     cd BLUI
     git checkout master
     git pull origin master

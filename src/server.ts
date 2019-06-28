@@ -1,10 +1,10 @@
 import App from './app';
-import PostsController from './posts/postController';
+import JwtsController from './posts/jwtsController';
 
 const port = 9090;
 const app = new App(
     [
-        new PostsController(),
+        new JwtsController(),
     ],
     port,
 );

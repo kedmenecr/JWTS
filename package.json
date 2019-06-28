@@ -2,9 +2,12 @@
   "name": "configurateionTS",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "ts-node ./src/server.ts"
+    "dev": "ts-node ./src/server.ts",
+    "build": "npm run clean && tsc",
+    "start": "node ./dist/server.js",
+    "clean": "rm -rf ./dist"
   },
   "keywords": [],
   "author": "",

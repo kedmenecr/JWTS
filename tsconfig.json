@@ -1,10 +1,13 @@
 {
     "compilerOptions": {
-        "sourceMap": true,
+        "sourceMap": false,
         "target": "es2017",
+        "module": "CommonJS",
         "outDir": "./dist",
         "baseUrl": "./src"
     },
+    "reflectionEnabled": true,
+    "compileOnSave": true,
     "include": [
         "src/**.ts"
     ],

@@ -2,9 +2,8 @@ language: node_js
 node_js:
 - '10'
 before_install:
-- openssl aes-256-cbc -k $pass -in id_rsa.enc -out id_rsa -d
+- openssl aes-256-cbc -K $encrypted_fd4c235b8b51_key -iv $encrypted_fd4c235b8b51_iv -in id_rsa.enc -out id_rsa -d
 addons:
- ssh_known_hosts: 116.202.28.78
+  ssh_known_hosts: 116.202.28.78
 after_success:
- - bash deploy.sh
-
+- bash deploy.sh

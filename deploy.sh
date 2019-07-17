@@ -9,8 +9,8 @@ git push deploy master
 # Skip this command if you don't need to execute any additional commands after deploying.
 ssh  root@$IP -p $PORT <<EOF
     cd /root/BlogInfra/JWTS
-    docker build -t "JWTS" .
-	  docker run -d --network "blog-infra" --name "JWTS" -p 9001:9001 JWTS
+    docker build -t "jwts" .
+	  docker run -d --network "blog-infra" --name "jwts" -p 9001:9001 jwts
 	  docker logs JWTS >> /var/log/containers.log  
 
     EOF
